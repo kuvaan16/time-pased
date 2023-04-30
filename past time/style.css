@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+main{
+    height: 250px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    color: white;
+    position: relative;
+}
+.box{
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0);
+    width: 15rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.inner-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.date{
+    border: none;
+    font-size: 0.5rem;
+    margin: 10px;
+    border-radius: 3px;
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(255 255 255 /11%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+}
+.calculate{
+    border: none;
+    padding: 6px 13px;
+    margin: 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(255 255 255 /11%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+}
+.calculate:hover{
+    color: rgba(255, 255, 255, 0.125);
+}
+.partition{
+    width: 2px;
+    background-color: white;
+    margin: 0 15px;
+}
+.circle{
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(45deg, #fc00ff, #00dbde);
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    animation: move-up 3s ease-in infinite alternate-reverse;
+
+}
+.circle:nth-child(2){
+    top: 102px;
+    left: -45px;
+    animation-name: move-down;
+    background: linear-gradient(45deg, #2980b9, #6dd5fa, #ffffff);
+}
+@keyframes move-down {
+    to{
+        transform: translateY(20px);
+    }
+    
+}
+@keyframes move-up {
+    to{
+        transform: translateY(-20px);
+    }
+    
+}
+.inner-boxs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.error{
+    font-size: 10px;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
